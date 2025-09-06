@@ -557,7 +557,7 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           // 1. Background Gradient Layer
           // const Positioned.fill(
-          //   child: DecoratedBox(
+          //   child: DecoratedBox(git remote -v
           //     decoration: BoxDecoration(
           //       gradient: LinearGradient(
           //         colors: [
