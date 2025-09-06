@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class EmptyCart extends StatelessWidget {
   const EmptyCart({super.key});
@@ -10,7 +11,7 @@ class EmptyCart extends StatelessWidget {
         children: [
           Expanded(
             child: Center(
-              child: Image.asset('assets/images/empty_cart.png'),
+              child: Lottie.asset('assets/images/empty.json'),
             ),
           ),
           const Text(

@@ -54,7 +54,6 @@ class CartScreen extends StatelessWidget {
                         },
                       ),
 
-                //? total price section
                 Container(
                   margin: const EdgeInsets.only(bottom: 15),
                   padding: const EdgeInsets.symmetric(horizontal: 30),
