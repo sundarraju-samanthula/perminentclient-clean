@@ -19,6 +19,7 @@ dependencies:
   animations: ^2.0.11 #for animation
   provider: ^6.1.2 #for state-management
   page_transition: ^2.0.9
+  animated_flip_counter: ^0.3.3
 
   dropdown_button2: ^2.3.9 #for dropdown
   flutter_cart: ^0.0.9 #for handle cart easly

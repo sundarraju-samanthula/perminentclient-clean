@@ -606,7 +606,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 //   ),
                 // ),
                 NavigationBar(
-                  backgroundColor: const Color.fromARGB(255, 39, 89, 18),
+                  //backgroundColor: const Color.fromARGB(255, 39, 89, 18),
+                  backgroundColor: Colors.purple,
                   elevation: 0,
                   selectedIndex: _selectedIndex,
                   onDestinationSelected: (idx) =>

@@ -1346,43 +1346,44 @@ class _FarmFreshAuthState extends State<LoginScreen>
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-          gradient: LinearGradient(colors: [
-        Color.fromARGB(255, 3, 51, 17), // light green
-        Color(0xFF3CA55C), // yellow-green
-      ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
+      // decoration: BoxDecoration(
+      //     gradient: LinearGradient(colors: [
+      //   Color.fromARGB(255, 3, 51, 17), // light green
+      //   Color(0xFF3CA55C), // yellow-green
+      // ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
+      //
       child: Scaffold(
-        backgroundColor: Colors.transparent,
+        // backgroundColor: Colors.transparent,
         extendBodyBehindAppBar: true,
         body: Stack(
           children: [
-            AnimatedBuilder(
-              animation: _bgOffset,
-              builder: (context, child) {
-                return Transform.translate(
-                  offset: Offset(0, _bgOffset.value),
-                  child: child,
-                );
-              },
-              child: Container(
-                decoration: const BoxDecoration(
-                    // gradient: LinearGradient(
-                    //   colors: [
-                    //     Color.fromARGB(255, 6, 62, 230),
-                    //     Color.fromARGB(255, 185, 219, 144)
-                    //   ],
-                    //   begin: Alignment.topLeft,
-                    //   end: Alignment.bottomRight,
-                    // ),
-                    ),
-                child: Opacity(
-                  opacity: 0.5,
-                  child: Image.asset(
-                    'assets/images/bg_veggies.png',
-                  ),
-                ),
-              ),
-            ),
+            // AnimatedBuilder(
+            //   animation: _bgOffset,
+            //   builder: (context, child) {
+            //     return Transform.translate(
+            //       offset: Offset(0, _bgOffset.value),
+            //       child: child,
+            //     );
+            //   },
+            //   child: Container(
+            //     decoration: const BoxDecoration(
+            //         // gradient: LinearGradient(
+            //         //   colors: [
+            //         //     Color.fromARGB(255, 6, 62, 230),
+            //         //     Color.fromARGB(255, 185, 219, 144)
+            //         //   ],
+            //         //   begin: Alignment.topLeft,
+            //         //   end: Alignment.bottomRight,
+            //         // ),
+            //         ),
+            //     child: Opacity(
+            //       opacity: 0.5,
+            //       child: Image.asset(
+            //         'assets/images/bg_veggies.png',
+            //       ),
+            //     ),
+            //   ),
+            // ),
             Center(
               child: SingleChildScrollView(
                 padding: const EdgeInsets.symmetric(horizontal: 10),

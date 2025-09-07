@@ -78,7 +78,9 @@ class ProductDetailScreen extends StatelessWidget {
                       Row(
                         children: [
                           Text(
-                            product!.offerPrice != null ? "\$${product!.offerPrice}" : "\$${product!.price}",
+                            product!.offerPrice != null
+                                ? " ${product!.offerPrice}/-"
+                                : " ${product!.price}/-",
                             style: Theme.of(context).textTheme.displayLarge,
                           ),
                           const SizedBox(width: 3),
@@ -95,7 +97,9 @@ class ProductDetailScreen extends StatelessWidget {
                           ),
                           const Spacer(),
                           Text(
-                            product!.quantity != 0 ? "Available stock : ${product!.quantity}" : "Not available",
+                            product!.quantity != 0
+                                ? "Available stock : ${product!.quantity}"
+                                : "Not available",
                             style: const TextStyle(fontWeight: FontWeight.w500),
                           )
                         ],
@@ -103,9 +107,10 @@ class ProductDetailScreen extends StatelessWidget {
                       const SizedBox(height: 30),
                       product!.proVariantId!.isNotEmpty
                           ? Text(
-                        'Available ${product!.proVariantTypeId?.type}',
-                        style: const TextStyle(color: Colors.red, fontSize: 16),
-                      )
+                              'Available ${product!.proVariantTypeId?.type}',
+                              style: const TextStyle(
+                                  color: Colors.red, fontSize: 16),
+                            )
                           : const SizedBox(),
                       Consumer<ProductDetailProvider>(
                         builder: (context, proDetailProvider, child) {
@@ -134,10 +139,11 @@ class ProductDetailScreen extends StatelessWidget {
                         child: ElevatedButton(
                           onPressed: product!.quantity != 0
                               ? () {
-                            context.proDetailProvider.addToCart(product!);
-                          }
+                                  context.proDetailProvider.addToCart(product!);
+                                }
                               : null,
-                          child: const Text("Add to cart", style: TextStyle(color: Colors.white)),
+                          child: const Text("Add to cart",
+                              style: TextStyle(color: Colors.white)),
                         ),
                       )
                     ],
