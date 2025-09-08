@@ -117,7 +117,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
       // Handle completion of onboarding
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => LoginScreen()),
+        MaterialPageRoute(builder: (context) => WarmIllustratedLogin()),
       );
     }
   }
@@ -134,7 +134,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   void _skipOnboarding() {
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => LoginScreen()),
+      MaterialPageRoute(builder: (context) => WarmIllustratedLogin()),
     );
   }
 

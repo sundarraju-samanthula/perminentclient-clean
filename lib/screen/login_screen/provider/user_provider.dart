@@ -102,6 +102,6 @@ class UserProvider extends ChangeNotifier {
   //? to logout the user
   void logOutUser() {
     box.remove(USER_INFO_BOX);
-    Get.offAll(LoginScreen());
+    Get.offAll(WarmIllustratedLogin());
   }
 }
