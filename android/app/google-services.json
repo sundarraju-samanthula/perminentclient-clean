@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "663450990774",
+    "project_id": "greenex-48474",
+    "storage_bucket": "greenex-48474.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663450990774:android:8aab116e76efdb96938e17",
+        "android_client_info": {
+          "package_name": "com.example.client_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx3IEEpz1vjdpVtq44J4-sqMWFLd1Zw6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

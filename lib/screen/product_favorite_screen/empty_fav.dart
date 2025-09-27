@@ -1,28 +1,3 @@
-// import 'package:flutter/material.dart';
-// import 'package:lottie/lottie.dart';
-
-// class EmptyCart extends StatelessWidget {
-//   const EmptyCart({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Expanded(
-//       child: Column(
-//         children: [
-//           Expanded(
-//             child: Center(
-//               child: Lottie.asset('assets/images/empty.json'),
-//             ),
-//           ),
-//           const Text(
-//             "Empty cart",
-//             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-//           )
-//         ],
-//       ),
-//     );
-//   }
-// }
 // import 'package:client_app/screen/home_screen.dart';
 // import 'package:flutter/material.dart';
 // import 'package:lottie/lottie.dart';
@@ -73,8 +48,8 @@ import 'package:client_app/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class EmptyCart extends StatelessWidget {
-  const EmptyCart({super.key});
+class EmptyFav extends StatelessWidget {
+  const EmptyFav({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -82,11 +57,11 @@ class EmptyCart extends StatelessWidget {
       children: [
         Expanded(
           child: Center(
-            child: Lottie.asset('assets/images/empty.json'),
+            child: Lottie.asset('assets/images/empty_fav.json'),
           ),
         ),
         const Text(
-          "No products added",
+          "No Favorite Product",
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
         ),
         const SizedBox(height: 16),

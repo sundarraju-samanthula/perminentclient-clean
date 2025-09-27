@@ -573,7 +573,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
           // 2. Foreground Scaffold with transparent background
           Scaffold(
-            //  backgroundColor: Colors.transparent,
+            backgroundColor: Colors.transparent,
             body: PageTransitionSwitcher(
               duration: const Duration(milliseconds: 600),
               transitionBuilder: (
@@ -607,7 +607,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 // ),
                 NavigationBar(
                   //backgroundColor: const Color.fromARGB(255, 39, 89, 18),
-                  backgroundColor: Colors.purple,
+                  backgroundColor: const Color.fromARGB(255, 7, 62, 107),
                   elevation: 0,
                   selectedIndex: _selectedIndex,
                   onDestinationSelected: (idx) =>

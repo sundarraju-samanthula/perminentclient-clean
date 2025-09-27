@@ -1004,9 +1004,9 @@ class _WarmIllustratedLoginState extends State<WarmIllustratedLogin>
                   ),
                   child: Center(
                     child: Lottie.asset(
-                      'assets/images/empty.json',
-                      width: 200,
-                      height: 200,
+                      'assets/images/farmer3.json',
+                      width: 500,
+                      height: 500,
                       fit: BoxFit.contain,
                       repeat: true,
                     ),

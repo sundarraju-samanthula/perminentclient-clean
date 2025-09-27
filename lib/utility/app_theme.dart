@@ -260,19 +260,22 @@ class AppTheme {
   const AppTheme._();
 
   static ThemeData lightAppTheme = ThemeData(
-    scaffoldBackgroundColor:
-        const Color.fromARGB(210, 81, 182, 99), // Let gradient show
+    scaffoldBackgroundColor: const Color.fromARGB(163, 116, 182, 202),
+    //
+    //const Color.fromARGB(172, 107, 205, 104),
+    //const Color.fromARGB(255, 201, 219, 219), // Let gradient show
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.all(12),
-        backgroundColor: const Color(0xFFf16b26),
+        backgroundColor: const Color.fromARGB(255, 7, 62, 107),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
       ),
     ),
     textButtonTheme: TextButtonThemeData(
-      style: TextButton.styleFrom(foregroundColor: Colors.deepOrange),
+      style: TextButton.styleFrom(
+          foregroundColor: const Color.fromARGB(255, 7, 62, 107)),
     ),
     iconTheme: const IconThemeData(color: Color(0xFFA6A3A0)),
     textTheme: const TextTheme(

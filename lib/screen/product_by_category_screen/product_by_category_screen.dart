@@ -3,7 +3,6 @@ import 'package:client_app/utility/extensions.dart';
 import '../../models/category.dart';
 import '../../models/sub_category.dart';
 import 'provider/product_by_category_provider.dart';
-import '../../utility/app_color.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../widget/horizondal_list.dart';
@@ -38,9 +37,9 @@ class ProductByCategoryScreen extends StatelessWidget {
                 title: Text(
                   "${selectedCategory.name}",
                   style: const TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                      color: AppColor.darkOrange),
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 expandedHeight: 190.0,
                 flexibleSpace: LayoutBuilder(

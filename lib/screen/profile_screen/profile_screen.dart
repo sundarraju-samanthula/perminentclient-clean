@@ -5,7 +5,6 @@ import '../../utility/extensions.dart';
 import '../../widget/navigation_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../utility/app_color.dart';
 import '../my_order_screen/my_order_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -38,7 +37,7 @@ class ProfileScreen extends StatelessWidget {
             style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
-                color: AppColor.darkOrange),
+                color: Color.fromARGB(255, 7, 62, 107)),
           ),
           // backgroundColor: Colors.transparent,
           elevation: 0,
@@ -82,7 +81,7 @@ class ProfileScreen extends StatelessWidget {
             Center(
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColor.darkOrange,
+                  backgroundColor: const Color.fromARGB(255, 7, 62, 107),
                   foregroundColor: Colors.white,
                   padding:
                       const EdgeInsets.symmetric(horizontal: 40, vertical: 16),

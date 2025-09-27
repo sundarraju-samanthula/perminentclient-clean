@@ -30,11 +30,12 @@ class ProductListScreen extends StatelessWidget {
                 Text(
                   "Lets gets somethings?",
                   style: Theme.of(context).textTheme.headlineSmall,
+                  selectionColor: Colors.black,
                 ),
                 const PosterSection(),
                 Text(
                   "Top categories",
-                  style: Theme.of(context).textTheme.headlineMedium,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
                 const SizedBox(height: 5),
                 Consumer<DataProvider>(

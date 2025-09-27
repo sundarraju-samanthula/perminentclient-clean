@@ -1,6 +1,5 @@
 import '../../utility/extensions.dart';
 import 'package:flutter/material.dart';
-import '../../utility/app_color.dart';
 import '../../widget/custom_text_field.dart';
 
 class MyAddressPage extends StatelessWidget {
@@ -27,7 +26,7 @@ class MyAddressPage extends StatelessWidget {
             style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
-                color: AppColor.darkOrange),
+                color: Color.fromARGB(255, 7, 62, 107)),
           ),
           //  backgroundColor: Colors.transparent,
         ),
@@ -123,7 +122,8 @@ class MyAddressPage extends StatelessWidget {
                     Center(
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: AppColor.darkOrange,
+                          backgroundColor:
+                              const Color.fromARGB(255, 7, 62, 107),
                           foregroundColor: Colors.white,
                           padding: const EdgeInsets.symmetric(
                               horizontal: 40, vertical: 16),

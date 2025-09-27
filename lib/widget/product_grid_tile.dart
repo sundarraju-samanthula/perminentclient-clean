@@ -1352,25 +1352,14 @@ class ProductGridTile extends StatelessWidget {
           ],
         ),
       ),
-      child: Container(
-        padding: const EdgeInsets.all(15),
-        decoration: BoxDecoration(
-          color: const Color(0xFFE5E6E8),
-          borderRadius: BorderRadius.circular(20),
-        ),
-        child: CustomNetworkImage(
-          imageUrl: product.images?.safeElementAt(0)?.url ?? '',
-          fit: BoxFit.scaleDown,
-          scale: 3.0,
-        ),
-      ),
       footer: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Container(
           padding: const EdgeInsets.all(10),
           decoration: const BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.vertical(bottom: Radius.circular(15)),
+            borderRadius: BorderRadius.vertical(
+                bottom: Radius.circular(15), top: Radius.circular(12)),
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -1418,8 +1407,9 @@ class ProductGridTile extends StatelessWidget {
                     width: double.infinity,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor:
-                            isSelected ? Colors.lightBlue : Colors.purple,
+                        backgroundColor: isSelected
+                            ? Colors.lightBlue
+                            : const Color.fromARGB(255, 7, 62, 107),
                         foregroundColor: Colors.white,
                       ),
                       onPressed: () {
@@ -1463,6 +1453,19 @@ class ProductGridTile extends StatelessWidget {
               ),
             ],
           ),
+        ),
+      ),
+      child: Container(
+        padding: const EdgeInsets.all(15),
+        decoration: BoxDecoration(
+          color: const Color.fromARGB(255, 201, 219, 219),
+          // const Color.fromARGB(172, 107, 205, 104),
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: CustomNetworkImage(
+          imageUrl: product.images?.safeElementAt(0)?.url ?? '',
+          fit: BoxFit.scaleDown,
+          scale: 3.0,
         ),
       ),
     );

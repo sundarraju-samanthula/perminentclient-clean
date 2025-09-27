@@ -1,6 +1,5 @@
 import '../../core/data/data_provider.dart';
 import '../tracking_screen/tracking_screen.dart';
-import '../../utility/app_color.dart';
 import '../../utility/extensions.dart';
 import '../../utility/utility_extention.dart';
 import 'package:flutter/material.dart';
@@ -21,14 +20,12 @@ class MyOrderScreen extends StatelessWidget {
       //   Color(0xFF3CA55C),
       // ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
       child: Scaffold(
-        backgroundColor: Colors.transparent,
+        // backgroundColor: Colors.transparent,
         appBar: AppBar(
           title: const Text(
             "My Orders",
             style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: AppColor.darkOrange),
+                fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black),
           ),
           // backgroundColor: Colors.transparent,
         ),
