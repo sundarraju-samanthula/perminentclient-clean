@@ -994,23 +994,31 @@ class _WarmIllustratedLoginState extends State<WarmIllustratedLogin>
               position: _headerOffset,
               child: ClipPath(
                 clipper: HeaderWaveClipper(),
-                child: Container(
-                  height: MediaQuery.of(context).size.height * 0.4,
-                  decoration: const BoxDecoration(
-                    gradient: LinearGradient(colors: [
-                      Color.fromARGB(255, 48, 83, 139),
-                      Color.fromARGB(255, 117, 186, 236)
-                    ], begin: Alignment.topLeft, end: Alignment.bottomRight),
-                  ),
-                  child: Center(
-                    child: Lottie.asset(
-                      'assets/images/farmer3.json',
-                      width: 500,
-                      height: 500,
-                      fit: BoxFit.contain,
-                      repeat: true,
-                    ),
-                  ),
+                child: Column(
+                  children: [
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.4,
+                      decoration: const BoxDecoration(
+                        gradient: LinearGradient(
+                            colors: [
+                              Color.fromARGB(255, 48, 83, 139),
+                              Color.fromARGB(255, 117, 186, 236)
+                            ],
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight),
+                      ),
+                      child: Center(
+                        child: Lottie.asset(
+                          'assets/images/farmer7.json',
+                          width: 600,
+                          height: 900,
+                          fit: BoxFit.contain,
+                          repeat: true,
+                        ),
+                      ),
+                      padding: EdgeInsets.only(bottom: 50),
+                    )
+                  ],
                 ),
               ),
             ),
@@ -1029,7 +1037,9 @@ class _WarmIllustratedLoginState extends State<WarmIllustratedLogin>
                         child: Container(
                           padding: const EdgeInsets.all(20),
                           decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.78),
+                            color: const Color.fromARGB(207, 152, 193, 202)
+                            // .withOpacity(0.78),
+                            ,
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Column(
@@ -1089,7 +1099,7 @@ class _WarmIllustratedLoginState extends State<WarmIllustratedLogin>
                                               strokeWidth: 2.2),
                                         )
                                       : Text(isLogin ? 'Login' : 'Sign Up',
-                                          style: const TextStyle(
+                                          style: TextStyle(
                                               fontSize: 16,
                                               fontWeight: FontWeight.w700)),
                                 ),
